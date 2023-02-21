@@ -285,7 +285,7 @@ format:
     schema: http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd
     include_items: 1
   marcxml:
-    metadataPrefix: marxml
+    metadataPrefix: marcxml
     metadataNamespace: http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim
     schema: http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd
     include_items: 1
