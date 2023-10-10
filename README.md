@@ -304,6 +304,13 @@ and find the OAI-PMH section. Modify the following settings:
 * OAI-PMH:ConfFile: Enter the location of the file you created previously. In this example ```/etc/koha/koha-oai.conf```
 
 * OAI-PMH:MaxCount: 500
+#######################################################
+  you may need to update the OAI
+
+run this command
+
+KOHA_CONF=/etc/koha/sites/library/koha-conf.xml PERL5LIB=/usr/share/koha/lib /usr/share/koha/bin/migration_tools/build_oai_sets.pl -v -i -r
+#####################################################################################
 
 To verify that the server is working go to ```http://<OPAC-ip-or-hostname>/cgi-bin/koha/oai.pl?verb=Identify```
 <img src="03-001-koha-oai.png" alt="Koha OAI server interface" width="500"/>
