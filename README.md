@@ -236,6 +236,22 @@ is not world-readable.
 ```
 sudo chmod 600 /usr/local/vufind/local/config/vufind/config.ini
 ```
+###configuracion para poner en modo NoIls la configuración
+
+#consultar https://subratiitk.wordpress.com/install-vufind-on-ubuntu/
+For ILS setup follow the below instructions:
+
+sudo gedit /usr/local/vufind/config/vufind/NoILS.ini
+
+You can find the line “mode = ils-offline”
+
+Change it to “mode = ils-none” & save it
+
+Then click on Fix option under ILS & choose “NoILS” from the drop down menu and click on Submit Query
+
+After fixing all problems, you can open VuFind at http://127.0.1.1/vufind
+##########################
+
 
 Back in the auto configure page, the ```Database``` entry should be OK. Press the Fix button next to Security. Finally Fix
 the ILS and from the dropdown choose the KohaRest driver. Press Submit. You will be presented with an error screen. Do not 
